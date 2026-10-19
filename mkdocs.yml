@@ -1,0 +1,56 @@
+site_name: IEEE RAS | AI & Robotics Knowledge Base
+site_description: Learning, building, and documenting AI & Robotics projects
+site_author: IEEE RAS AI Team
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+  - assets/stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Learning Hub:
+      - Overview: learning/index.md
+      - Getting Started: learning/getting-started.md
+      - Git & GitHub: learning/git.md
+      - Python Basics: learning/python.md
+      - AI Roadmap: learning/ai-roadmap.md
+  - Projects Hub:
+      - Overview: projects/index.md
+      - Sumo Robot: projects/sumo.md
+      - Project Template: projects/template.md
+  - Contribute: contribute.md
+  - About: about.md
